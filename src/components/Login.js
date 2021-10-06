@@ -9,6 +9,13 @@ const Login = (props) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
+  const signInn = (e) => {
+    //TODO: Put your login logic here
+  }
+  const register = (e) => {
+    //TODO: Put your login logic here
+  }
+
   return (
     <Container>
       {props.user && <Redirect to="/home" />}
