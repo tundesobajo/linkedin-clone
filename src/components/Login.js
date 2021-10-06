@@ -3,7 +3,12 @@ import styled from "styled-components";
 import { connect } from "react-redux";
 import { signInApi } from "../actions";
 import { Redirect } from "react-router";
+
 const Login = (props) => {
+  // Defile state for email and password.
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
   return (
     <Container>
       {props.user && <Redirect to="/home" />}
