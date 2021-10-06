@@ -22,26 +22,10 @@ const Login = (props) => {
           <img src="/images/login-hero.svg" alt="" />
         </Hero>
         <Form>
-          <form>
-            <Google onClick={() => props.signIn()}>
-              <img src="/images/google.svg" alt="" />
-              Sign in with Google
-            </Google>
-            <input
-              type="text"
-              placeholder="email  address"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <input
-              type="password"
-              placeholder="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-            <button onClick={signInn}>Sign In</button>
-            <button onClick={register}>Create Account</button>
-          </form>
+          <Google onClick={() => props.signIn()}>
+            <img src="/images/google.svg" alt="" />
+            Sign in with Google
+          </Google>
         </Form>
       </Section>
     </Container>
